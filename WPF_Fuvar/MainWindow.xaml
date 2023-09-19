@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF_Fuvar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Fuvar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="thirdQuestionLabel" Grid.Row="0"/>
+        <Label x:Name="fourthQuestionLabel" Grid.Row="1" Width="300" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="taxiIDComboBox" Grid.Row="1" Width="100">
+
+        </ComboBox>
+        <Label x:Name="fifthQuestionLabel" Grid.Row="2" Height="30" VerticalAlignment="Top"/>
+        <ListBox x:Name="fifthQuestionListBox" Grid.Row="2" Height="120" VerticalAlignment="Bottom"/>
+        <Label x:Name="sixthQuestionLabel" Grid.Row="3"/>
+        <ListBox x:Name="seventhQuestionListBox" Grid.Row="4" Height="120" VerticalAlignment="Bottom"/>
+        <Label x:Name="seventhQuestionLabel" Grid.Row="4" Height="30" VerticalAlignment="Top"/>
+        <Label x:Name="eightQuestionLabel" Grid.Row="5"/>
+        <!--Buttons-->
+        <Button x:Name="thirdQuestionButton" Click="thirdQuestionButton_Click" Width="60" Grid.Row="6" HorizontalAlignment="Left" Content="3. feladat"/>
+        <Button x:Name="fourthQuestionButton" Click="fourthQuestionButton_Click" Width="60" Grid.Row="6" HorizontalAlignment="Left" Margin="100 0 0 0" Content="4. feladat"/>
+        <Button x:Name="fifthQuestionButton" Click="fifthQuestionButton_Click" Width="60" Grid.Row="6" HorizontalAlignment="Left" Margin="200 0 0 0" Content="5. feladat"/>
+        <Button x:Name="sixthQuestionButton" Click="sixthQuestionButton_Click" Width="60" Grid.Row="6" HorizontalAlignment="Left" Margin="300 0 0 0" Content="6.feladat"/>
+        <Button x:Name="seventhQuestionButton" Click="seventhQuestionButton_Click" Width="60" Grid.Row="6" HorizontalAlignment="Left" Margin="400 0 0 0" Content="7.feladat"/>
+        <Button x:Name="eightQuestionButton" Click="eightQuestionButton_Click" Width="60" Grid.Row="6" HorizontalAlignment="Left" Margin="500 0 0 0" Content="8.feladat" />
+    </Grid>
+</Window>
